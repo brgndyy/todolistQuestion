@@ -1,0 +1,48 @@
+.todoItem{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(210, 210, 210);
+    align-items: center;
+}
+
+
+.toDo{
+    display: flex;
+    align-items: center;
+}
+
+.checkBtn{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.toDo li{
+    margin-left: 10px;
+}
+
+.completed_todo{
+    text-decoration: line-through;
+}
+
+.deleteBtn{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(76, 75, 129);
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+    cursor: pointer;
+}
+.todoItem:hover .deleteBtn{
+    opacity: 1;
+}
